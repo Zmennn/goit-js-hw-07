@@ -13,10 +13,17 @@ const images = [
     },
 ];
 
-const makeStringGalleryMarkup = image => `<li class="gallery--list"><img src="${image.url}" alt="${image.alt}"></li>`;
+const makeStringGalleryMarkup = image => `<li class="gallery__list"><img class="gallery__image" src="${image.url}" alt="${image.alt}"></li>`;
 
 const makeAllStringGalleryMarkup = images
     .map(makeStringGalleryMarkup)
-    .join('')
+    .join('');
 
-#gallery
+const listEl = document.querySelector('#gallery');
+
+listEl.insertAdjacentHTML("afterbegin", makeAllStringGalleryMarkup)
+
+
+
+
+

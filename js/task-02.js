@@ -19,5 +19,5 @@ const makeListElArray = ingredients => {
 };
 
 const listElArray = makeListElArray(ingredients);
-const list = document.querySelector('#ingredients');
-list.append(...listElArray);
+const listEl = document.querySelector('#ingredients');
+listEl.append(...listElArray);
