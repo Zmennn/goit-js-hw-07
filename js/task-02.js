@@ -6,14 +6,18 @@ const ingredients = [
     'Зелень',
     'Приправы',
 ];
-const listElArray = [];
 
-ingredients.forEach(
-    ingredient => {
-        const listEl = document.createElement('li');
-        listEl.textContent = ingredient;
-        listElArray.push(listEl);
-    }
-);
-const list = document.querySelector('#ingredients')
-list.append(...listElArray)
+
+const makeListElArray = ingredients => {
+    return ingredients.map(
+        ingredient => {
+            const listEl = document.createElement('li');
+            listEl.textContent = ingredient;
+            return listEl
+        }
+    )
+};
+
+const listElArray = makeListElArray(ingredients);
+const list = document.querySelector('#ingredients');
+list.append(...listElArray);
