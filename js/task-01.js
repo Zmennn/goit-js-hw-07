@@ -10,3 +10,5 @@ categories.forEach(category => {
     const quantitySubCategories = category.querySelectorAll('li').length;
     console.log(`Количество элементов:${quantitySubCategories}`);
 })
+
+
