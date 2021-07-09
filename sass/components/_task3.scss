@@ -1,0 +1,16 @@
+.gallery {
+  --grid-item: 1;
+
+  @include tablet {
+    --grid-item: 2;
+  }
+  @include desktop {
+    --grid-item: 3;
+  }
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

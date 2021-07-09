@@ -1,0 +1,18 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -30px;
+}
+.grid__items {
+  flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 30px;
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

@@ -13,7 +13,7 @@ const images = [
     },
 ];
 
-const makeStringGalleryMarkup = image => `<li class="gallery__list"><img class="gallery__image" src="${image.url}" alt="${image.alt}"></li>`;
+const makeStringGalleryMarkup = image => `<li class="grid__items"><img class="gallery__img" src="${image.url}" alt="${image.alt}"></li>`;
 
 const makeAllStringGalleryMarkup = images
     .map(makeStringGalleryMarkup)
