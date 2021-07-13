@@ -47,9 +47,6 @@ function onDestroy(event) {
     refs.buttonRenderEl.addEventListener('click', onRender);
     refs.inputEl.addEventListener('input', onInputAmount);
 
-    for (let i = 0; i < amount; i += 1) {
-        const destroyEl = document.querySelector(`.number-${i}`);
-        destroyEl.remove()
-    }
+    refs.containerEl.innerHTML = ''
 };
 
