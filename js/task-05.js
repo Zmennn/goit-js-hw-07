@@ -9,4 +9,5 @@ function onInput(event) {
         textEl.textContent = event.currentTarget.value :
         textEl.textContent = 'незнакомец'
 
+
 };
