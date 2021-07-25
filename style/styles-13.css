@@ -1,0 +1,18 @@
+.main-container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.text {
+  line-height: 30px;
+  font-size: 25px;
+  opacity: 0.1;
+  transition-property: opacity;
+  transition-duration: 2000ms;
+}
+
+.text.is-visible {
+  opacity: 1;
+}
