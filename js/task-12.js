@@ -6,8 +6,7 @@ const refs = {
 
 //Функция включающая и останавливающая видео
 const handleVideoObserver = (entries) => {
-    console.log(entries);
-    console.log(entries[0].target, refs.videoPlayer);
+
     if (entries[0].isIntersecting) {
         refs.videoPlayer.play();
     } else {
