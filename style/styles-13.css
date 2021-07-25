@@ -9,10 +9,12 @@
   line-height: 30px;
   font-size: 25px;
   opacity: 0.1;
-  transition-property: opacity;
+  transform: translateX(95%);
+  transition-property: opacity, transform;
   transition-duration: 2000ms;
 }
 
 .text.is-visible {
   opacity: 1;
+  transform: translateX(0);
 }
