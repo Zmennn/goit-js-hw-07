@@ -7,7 +7,7 @@ const href = {
 //создадим функцию, в нее запишем действия которые выполнит браузер в случае выполнения УСЛОВИЙ , определенных
 //самим обсервером и его настройками
 const handleObserver = (entries, observer) => {
-    console.log(entries[0].isIntersecting);
+    console.log(entries);
     if (entries[0].isIntersecting) { href.targetText.classList.add("visible") }
     else {
         href.targetText.classList.remove("visible")
